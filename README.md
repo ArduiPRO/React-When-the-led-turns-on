@@ -37,7 +37,7 @@
       pinMode(LEDG, OUTPUT);
       pinMode(LEDY, OUTPUT);
       pinMode(LEDR, OUTPUT);
-      randomSeed(analogRead(0));  //---------------->>>>>>> revisar randomSeed para ver que hacia
+      randomSeed(analogRead(0)); 
 
       Serial.println("Starting...");//appears on screen
       digitalWrite(LEDG, HIGH);//turn on the led 
@@ -100,7 +100,7 @@
           if (buttonState2 == LOW || buttonState3 == LOW || buttonState4 == LOW) {//if not inc increaes by 1 
             inc++;
           }
-    while (digitalRead(BUT2) == LOW || digitalRead(BUT3) == LOW || digitalRead(BUT4) == LOW) {//so that inc doesnt increase while BUT2,3 //and 4 are pressed 
+    while (digitalRead(BUT2) == LOW || digitalRead(BUT3) == LOW || digitalRead(BUT4) == LOW) {//so that inc doesnt increase while BUT2,3 and 4 are pressed 
           }
         }
       }
